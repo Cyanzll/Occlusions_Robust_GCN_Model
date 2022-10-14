@@ -1,0 +1,713 @@
+[03.27.22|18:08:10] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 80, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.27.22|18:08:10] Training epoch: 0
+[03.27.22|18:34:06] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 80, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.27.22|18:34:06] Training epoch: 0
+[03.27.22|20:10:47] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 80, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.27.22|20:10:47] Training epoch: 0
+[03.27.22|20:14:51] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 8, 'test_batch_size': 8, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.27.22|20:14:51] Training epoch: 0
+[03.27.22|20:19:09] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.27.22|20:19:09] Training epoch: 0
+[03.28.22|09:34:41] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|09:34:41] Training epoch: 0
+[03.28.22|09:39:46] 	Iter 0 Done. | loss: 4.2005 | lr: 0.100000
+[03.28.22|09:41:26] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|09:41:26] Training epoch: 0
+[03.28.22|09:44:45] 	Iter 0 Done. | loss: 4.2520 | lr: 0.100000
+[03.28.22|09:49:15] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|09:49:15] Training epoch: 0
+[03.28.22|09:49:18] 	Iter 0 Done. | loss: 3.8732 | lr: 0.100000
+[03.28.22|09:49:30] 	mean_loss: 5.432824655815407
+[03.28.22|09:49:30] Time consumption:
+[03.28.22|09:49:30] Done.
+[03.28.22|09:49:30] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.28.22|09:49:30] Eval epoch: 0
+[03.28.22|11:42:00] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|11:42:00] Training epoch: 0
+[03.28.22|11:46:20] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|11:46:20] Training epoch: 0
+[03.28.22|11:49:40] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|11:49:40] Training epoch: 0
+[03.28.22|11:55:05] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|11:55:05] Training epoch: 0
+[03.28.22|12:09:55] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:09:55] Training epoch: 0
+[03.28.22|12:11:29] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:11:29] Training epoch: 0
+[03.28.22|12:11:32] 	Iter 0 Done. | loss: 4.0885 | lr: 0.100000
+[03.28.22|12:11:48] 	mean_loss: 5.560579985748102
+[03.28.22|12:11:48] Time consumption:
+[03.28.22|12:11:48] Done.
+[03.28.22|12:11:48] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.28.22|12:11:48] Eval epoch: 0
+[03.28.22|12:12:56] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:12:56] Training epoch: 0
+[03.28.22|12:12:58] 	Iter 0 Done. | loss: 3.9235 | lr: 0.100000
+[03.28.22|12:18:12] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:18:12] Training epoch: 0
+[03.28.22|12:18:15] 	Iter 0 Done. | loss: 4.3313 | lr: 0.100000
+[03.28.22|12:19:49] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:19:49] Training epoch: 0
+[03.28.22|12:21:24] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:21:24] Training epoch: 0
+[03.28.22|12:21:27] 	Iter 0 Done. | loss: 4.0524 | lr: 0.100000
+[03.28.22|12:25:17] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:25:17] Training epoch: 0
+[03.28.22|12:26:38] 	Iter 0 Done. | loss: 3.6479 | lr: 0.100000
+[03.28.22|12:26:57] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:26:57] Training epoch: 0
+[03.28.22|12:31:24] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:31:24] Training epoch: 0
+[03.28.22|12:39:36] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|12:39:36] Training epoch: 0
+[03.28.22|13:58:44] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|13:58:44] Training epoch: 0
+[03.28.22|14:04:37] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|14:04:37] Training epoch: 0
+[03.28.22|14:05:35] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|14:05:35] Training epoch: 0
+[03.28.22|14:05:57] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|14:05:57] Training epoch: 0
+[03.28.22|14:06:48] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|14:06:48] Training epoch: 0
+[03.28.22|14:55:57] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.28.22|14:55:57] Training epoch: 0
+[03.30.22|00:27:59] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|00:27:59] Training epoch: 0
+[03.30.22|00:28:03] 	Iter 0 Done. | loss: 3.9260 | lr: 0.100000
+[03.30.22|00:28:48] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|00:28:48] Training epoch: 0
+[03.30.22|00:28:51] 	Iter 0 Done. | loss: 3.9838 | lr: 0.100000
+[03.30.22|00:29:07] 	mean_loss: 5.733996977040797
+[03.30.22|00:29:07] Time consumption:
+[03.30.22|00:29:07] Done.
+[03.30.22|00:29:07] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|00:29:07] Eval epoch: 0
+[03.30.22|12:00:09] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:00:09] Training epoch: 0
+[03.30.22|12:00:17] 	Iter 0 Done. | loss: 3.9413 | lr: 0.100000
+[03.30.22|12:01:02] 	mean_loss: 5.585105619312804
+[03.30.22|12:01:02] Time consumption:
+[03.30.22|12:01:02] Done.
+[03.30.22|12:01:02] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|12:01:02] Eval epoch: 0
+[03.30.22|12:15:27] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:15:27] Training epoch: 0
+[03.30.22|12:17:17] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:17:17] Training epoch: 0
+[03.30.22|12:19:14] 	Iter 0 Done. | loss: 4.3355 | lr: 0.100000
+[03.30.22|12:24:32] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:24:32] Training epoch: 0
+[03.30.22|12:27:23] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:27:23] Training epoch: 0
+[03.30.22|12:27:30] 	Iter 0 Done. | loss: 4.5638 | lr: 0.100000
+[03.30.22|12:28:04] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 81, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:28:04] Training epoch: 0
+[03.30.22|12:28:11] 	Iter 0 Done. | loss: 4.6288 | lr: 0.100000
+[03.30.22|12:32:18] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 81, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|12:32:18] Training epoch: 0
+[03.30.22|12:32:43] 	Iter 0 Done. | loss: 4.3093 | lr: 0.100000
+[03.30.22|16:20:10] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 81, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:20:10] Training epoch: 0
+[03.30.22|16:20:15] 	Iter 0 Done. | loss: 4.2238 | lr: 0.100000
+[03.30.22|16:20:32] 	mean_loss: 5.467415338681068
+[03.30.22|16:20:32] Time consumption:
+[03.30.22|16:20:32] Done.
+[03.30.22|16:20:32] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|16:20:32] Training epoch: 1
+[03.30.22|16:20:38] 	Iter 100 Done. | loss: 4.2565 | lr: 0.100000
+[03.30.22|16:47:08] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:47:08] Training epoch: 0
+[03.30.22|16:47:12] 	Iter 0 Done. | loss: 3.9069 | lr: 0.100000
+[03.30.22|16:48:40] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:48:40] Training epoch: 0
+[03.30.22|16:48:43] 	Iter 0 Done. | loss: 4.2524 | lr: 0.100000
+[03.30.22|16:49:13] 	mean_loss: 4.914292713999748
+[03.30.22|16:49:13] Time consumption:
+[03.30.22|16:49:13] Done.
+[03.30.22|16:49:13] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|16:49:13] Eval epoch: 0
+[03.30.22|16:49:20] 	mean_loss: 4.156686704020855
+[03.30.22|16:49:20] 	Top1: 1.65%
+[03.30.22|16:49:20] 	Top5: 8.26%
+[03.30.22|16:49:20] Done.
+[03.30.22|16:49:20] Training epoch: 1
+[03.30.22|16:49:30] 	Iter 100 Done. | loss: 4.2294 | lr: 0.100000
+[03.30.22|16:49:52] 	mean_loss: 4.297554299235344
+[03.30.22|16:49:52] Time consumption:
+[03.30.22|16:49:52] Done.
+[03.30.22|16:49:52] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.30.22|16:49:52] Eval epoch: 1
+[03.30.22|16:50:00] 	mean_loss: 4.120610928732502
+[03.30.22|16:50:00] 	Top1: 1.65%
+[03.30.22|16:50:00] 	Top5: 8.26%
+[03.30.22|16:50:00] Done.
+[03.30.22|16:51:34] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:51:34] Training epoch: 0
+[03.30.22|16:51:37] 	Iter 0 Done. | loss: 3.9927 | lr: 0.100000
+[03.30.22|16:52:07] 	mean_loss: 4.738239002227783
+[03.30.22|16:52:07] Time consumption:
+[03.30.22|16:52:07] Done.
+[03.30.22|16:52:07] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|16:52:07] Eval epoch: 0
+[03.30.22|16:52:14] 	mean_loss: 4.13929808041281
+[03.30.22|16:52:14] 	Top1: 1.65%
+[03.30.22|16:52:14] 	Top5: 9.09%
+[03.30.22|16:52:14] Done.
+[03.30.22|16:52:14] Training epoch: 1
+[03.30.22|16:52:32] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 4, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:52:32] Training epoch: 0
+[03.30.22|16:54:39] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|16:54:39] Training epoch: 0
+[03.30.22|16:54:42] 	Iter 0 Done. | loss: 4.1520 | lr: 0.100000
+[03.30.22|16:55:12] 	mean_loss: 4.758433490991592
+[03.30.22|16:55:12] Time consumption:
+[03.30.22|16:55:12] Done.
+[03.30.22|16:55:12] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|16:55:12] Eval epoch: 0
+[03.30.22|16:55:20] 	mean_loss: 4.146955667448438
+[03.30.22|16:55:20] 	Top1: 1.65%
+[03.30.22|16:55:20] 	Top5: 8.26%
+[03.30.22|16:55:20] Done.
+[03.30.22|16:55:20] Training epoch: 1
+[03.30.22|16:55:29] 	Iter 100 Done. | loss: 4.4689 | lr: 0.100000
+[03.30.22|16:55:52] 	mean_loss: 4.286211347579956
+[03.30.22|16:55:52] Time consumption:
+[03.30.22|16:55:52] Done.
+[03.30.22|16:55:52] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.30.22|16:55:52] Eval epoch: 1
+[03.30.22|16:55:59] 	mean_loss: 4.128114095404128
+[03.30.22|16:55:59] 	Top1: 2.48%
+[03.30.22|16:55:59] 	Top5: 9.09%
+[03.30.22|16:55:59] Done.
+[03.30.22|17:02:26] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|17:02:26] Training epoch: 0
+[03.30.22|17:02:29] 	Iter 0 Done. | loss: 4.4356 | lr: 0.100000
+[03.30.22|17:02:59] 	mean_loss: 6.058167514204979
+[03.30.22|17:02:59] Time consumption:
+[03.30.22|17:02:59] Done.
+[03.30.22|17:02:59] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|17:02:59] Eval epoch: 0
+[03.30.22|17:03:06] 	mean_loss: 4.190291587971458
+[03.30.22|17:03:06] 	Top1: 1.65%
+[03.30.22|17:03:06] 	Top5: 8.26%
+[03.30.22|17:03:06] Done.
+[03.30.22|17:03:06] Training epoch: 1
+[03.30.22|17:03:16] 	Iter 100 Done. | loss: 4.3581 | lr: 0.100000
+[03.30.22|17:03:38] 	mean_loss: 4.410930156707764
+[03.30.22|17:03:38] Time consumption:
+[03.30.22|17:03:38] Done.
+[03.30.22|17:03:38] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.30.22|17:03:38] Eval epoch: 1
+[03.30.22|17:03:46] 	mean_loss: 4.178735693624197
+[03.30.22|17:03:46] 	Top1: 1.65%
+[03.30.22|17:03:46] 	Top5: 7.44%
+[03.30.22|17:03:46] Done.
+[03.30.22|17:25:26] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|17:25:26] Training epoch: 0
+[03.30.22|17:25:31] 	Iter 0 Done. | loss: 4.2344 | lr: 0.100000
+[03.30.22|17:26:01] 	mean_loss: 4.791176500916481
+[03.30.22|17:26:01] Time consumption:
+[03.30.22|17:26:01] Done.
+[03.30.22|17:26:01] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|17:26:01] Eval epoch: 0
+[03.30.22|17:26:09] 	mean_loss: 4.132773060443973
+[03.30.22|17:26:09] 	Top1: 1.65%
+[03.30.22|17:26:09] 	Top5: 9.09%
+[03.30.22|17:26:09] Done.
+[03.30.22|17:26:09] Training epoch: 1
+[03.30.22|17:26:19] 	Iter 100 Done. | loss: 4.4426 | lr: 0.100000
+[03.30.22|17:26:42] 	mean_loss: 4.276677134633064
+[03.30.22|17:26:42] Time consumption:
+[03.30.22|17:26:42] Done.
+[03.30.22|17:26:42] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.30.22|17:26:42] Eval epoch: 1
+[03.30.22|17:26:49] 	mean_loss: 4.118337979986648
+[03.30.22|17:26:49] 	Top1: 1.65%
+[03.30.22|17:26:49] 	Top5: 9.09%
+[03.30.22|17:26:49] Done.
+[03.30.22|17:26:58] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|17:26:58] Training epoch: 0
+[03.30.22|17:27:01] 	Iter 0 Done. | loss: 4.1650 | lr: 0.100000
+[03.30.22|17:27:32] 	mean_loss: 4.684094548225403
+[03.30.22|17:27:32] Time consumption:
+[03.30.22|17:27:32] Done.
+[03.30.22|17:27:32] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|17:27:32] Eval epoch: 0
+[03.30.22|17:27:59] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.30.22|17:27:59] Training epoch: 0
+[03.30.22|17:28:02] 	Iter 0 Done. | loss: 4.2331 | lr: 0.100000
+[03.30.22|17:28:32] 	mean_loss: 4.977183482050895
+[03.30.22|17:28:32] Time consumption:
+[03.30.22|17:28:32] Done.
+[03.30.22|17:28:32] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.30.22|17:28:32] Eval epoch: 0
+[03.30.22|17:28:40] 	mean_loss: 4.163279249648418
+[03.30.22|17:28:40] 	Top1: 1.65%
+[03.30.22|17:28:40] 	Top5: 8.26%
+[03.30.22|17:28:40] Done.
+[03.30.22|17:28:40] Training epoch: 1
+[03.30.22|17:28:50] 	Iter 100 Done. | loss: 4.0719 | lr: 0.100000
+[03.30.22|17:29:13] 	mean_loss: 4.281204777956009
+[03.30.22|17:29:13] Time consumption:
+[03.30.22|17:29:13] Done.
+[03.30.22|17:29:13] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.30.22|17:29:13] Eval epoch: 1
+[03.30.22|17:29:21] 	mean_loss: 4.147040012454198
+[03.30.22|17:29:21] 	Top1: 1.65%
+[03.30.22|17:29:21] 	Top5: 8.26%
+[03.30.22|17:29:21] Done.
+[03.31.22|10:44:54] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|10:44:54] Training epoch: 0
+[03.31.22|10:44:59] 	Iter 0 Done. | loss: 4.3388 | lr: 0.100000
+[03.31.22|10:45:30] 	mean_loss: 4.852064394950867
+[03.31.22|10:45:30] Time consumption:
+[03.31.22|10:45:30] Done.
+[03.31.22|10:45:30] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.31.22|10:45:30] Eval epoch: 0
+[03.31.22|10:45:37] 	mean_loss: 4.158148341927647
+[03.31.22|10:45:37] 	Top1: 1.65%
+[03.31.22|10:45:37] 	Top5: 10.74%
+[03.31.22|10:45:37] Done.
+[03.31.22|10:45:37] Training epoch: 1
+[03.31.22|10:45:48] 	Iter 100 Done. | loss: 4.8473 | lr: 0.100000
+[03.31.22|10:50:07] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|10:50:07] Training epoch: 0
+[03.31.22|10:50:10] 	Iter 0 Done. | loss: 4.0117 | lr: 0.100000
+[03.31.22|10:50:40] 	mean_loss: 4.854194529354572
+[03.31.22|10:50:40] Time consumption:
+[03.31.22|10:50:40] Done.
+[03.31.22|10:50:41] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.31.22|10:50:41] Eval epoch: 0
+[03.31.22|10:50:48] 	mean_loss: 4.1436981898694
+[03.31.22|10:50:48] 	Top1: 2.48%
+[03.31.22|10:50:48] 	Top5: 9.09%
+[03.31.22|10:50:48] Done.
+[03.31.22|10:50:48] Training epoch: 1
+[03.31.22|10:50:58] 	Iter 100 Done. | loss: 4.5669 | lr: 0.100000
+[03.31.22|10:51:05] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|10:51:05] Training epoch: 0
+[03.31.22|10:51:09] 	Iter 0 Done. | loss: 4.2462 | lr: 0.100000
+[03.31.22|10:51:39] 	mean_loss: 4.876833605766296
+[03.31.22|10:51:39] Time consumption:
+[03.31.22|10:51:39] Done.
+[03.31.22|10:51:39] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.31.22|10:51:39] Eval epoch: 0
+[03.31.22|10:51:47] 	mean_loss: 4.130788044496016
+[03.31.22|10:51:47] 	Top1: 2.48%
+[03.31.22|10:51:47] 	Top5: 9.92%
+[03.31.22|10:51:47] Done.
+[03.31.22|10:51:47] Training epoch: 1
+[03.31.22|10:51:57] 	Iter 100 Done. | loss: 4.3383 | lr: 0.100000
+[03.31.22|10:52:20] 	mean_loss: 4.256932476162911
+[03.31.22|10:52:20] Time consumption:
+[03.31.22|10:52:20] Done.
+[03.31.22|10:52:20] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.31.22|10:52:20] Eval epoch: 1
+[03.31.22|10:52:28] 	mean_loss: 4.098072040179544
+[03.31.22|10:52:28] 	Top1: 1.65%
+[03.31.22|10:52:28] 	Top5: 9.92%
+[03.31.22|10:52:28] Done.
+[03.31.22|10:55:10] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|10:55:10] Training epoch: 0
+[03.31.22|10:55:15] 	Iter 0 Done. | loss: 3.8883 | lr: 0.100000
+[03.31.22|10:55:45] 	mean_loss: 4.8406847178936
+[03.31.22|10:55:45] Time consumption:
+[03.31.22|10:55:45] Done.
+[03.31.22|10:55:45] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.31.22|10:55:45] Eval epoch: 0
+[03.31.22|10:55:53] 	mean_loss: 4.132223937137068
+[03.31.22|10:55:53] 	Top1: 1.65%
+[03.31.22|10:55:53] 	Top5: 8.26%
+[03.31.22|10:55:53] Done.
+[03.31.22|10:55:53] Training epoch: 1
+[03.31.22|10:56:03] 	Iter 100 Done. | loss: 4.1427 | lr: 0.100000
+[03.31.22|10:56:26] 	mean_loss: 4.293148058652878
+[03.31.22|10:56:26] Time consumption:
+[03.31.22|10:56:26] Done.
+[03.31.22|10:56:26] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[03.31.22|10:56:26] Eval epoch: 1
+[03.31.22|10:56:34] 	mean_loss: 4.119507285189037
+[03.31.22|10:56:34] 	Top1: 3.31%
+[03.31.22|10:56:34] 	Top5: 9.09%
+[03.31.22|10:56:34] Done.
+[03.31.22|11:36:32] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|11:36:32] Training epoch: 0
+[03.31.22|11:36:36] 	Iter 0 Done. | loss: 4.2964 | lr: 0.100000
+[03.31.22|22:40:56] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|22:40:56] Training epoch: 0
+[03.31.22|22:41:00] 	Iter 0 Done. | loss: 4.3287 | lr: 0.100000
+[03.31.22|22:41:12] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|22:41:12] Training epoch: 0
+[03.31.22|22:41:17] 	Iter 0 Done. | loss: 4.3755 | lr: 0.100000
+[03.31.22|22:41:40] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|22:41:40] Training epoch: 0
+[03.31.22|22:41:43] 	Iter 0 Done. | loss: 3.9555 | lr: 0.100000
+[03.31.22|22:43:27] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|22:43:27] Training epoch: 0
+[03.31.22|22:43:39] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/xsub/val_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|22:43:39] Training epoch: 0
+[03.31.22|23:08:04] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:08:04] Training epoch: 0
+[03.31.22|23:08:09] 	Iter 0 Done. | loss: 3.8059 | lr: 0.100000
+[03.31.22|23:08:23] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:08:23] Training epoch: 0
+[03.31.22|23:15:12] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:15:12] Training epoch: 0
+[03.31.22|23:15:18] 	Iter 0 Done. | loss: 3.6481 | lr: 0.100000
+[03.31.22|23:24:51] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:24:51] Training epoch: 0
+[03.31.22|23:24:58] 	Iter 0 Done. | loss: 4.4497 | lr: 0.100000
+[03.31.22|23:25:16] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:25:16] Training epoch: 0
+[03.31.22|23:25:21] 	Iter 0 Done. | loss: 4.0048 | lr: 0.100000
+[03.31.22|23:29:31] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:29:31] Training epoch: 0
+[03.31.22|23:30:24] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:30:24] Training epoch: 0
+[03.31.22|23:30:30] 	Iter 0 Done. | loss: 4.1675 | lr: 0.100000
+[03.31.22|23:31:01] 	mean_loss: 4.958694311976433
+[03.31.22|23:31:01] Time consumption:
+[03.31.22|23:31:01] Done.
+[03.31.22|23:31:02] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch1_model.pt.
+[03.31.22|23:31:02] Eval epoch: 0
+[03.31.22|23:32:44] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:32:44] Training epoch: 0
+[03.31.22|23:32:49] 	Iter 0 Done. | loss: 4.1154 | lr: 0.100000
+[03.31.22|23:33:23] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:33:23] Training epoch: 0
+[03.31.22|23:33:28] 	Iter 0 Done. | loss: 3.9075 | lr: 0.100000
+[03.31.22|23:36:21] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:36:21] Training epoch: 0
+[03.31.22|23:36:26] 	Iter 0 Done. | loss: 4.0587 | lr: 0.100000
+[03.31.22|23:37:09] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:37:09] Training epoch: 0
+[03.31.22|23:37:14] 	Iter 0 Done. | loss: 4.2570 | lr: 0.100000
+[03.31.22|23:40:20] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:40:20] Training epoch: 0
+[03.31.22|23:40:26] 	Iter 0 Done. | loss: 3.7542 | lr: 0.100000
+[03.31.22|23:42:38] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:42:38] Training epoch: 0
+[03.31.22|23:43:16] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:43:16] Training epoch: 0
+[03.31.22|23:43:21] 	Iter 0 Done. | loss: 4.1985 | lr: 0.100000
+[03.31.22|23:43:43] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:43:43] Training epoch: 0
+[03.31.22|23:43:48] 	Iter 0 Done. | loss: 4.4779 | lr: 0.100000
+[03.31.22|23:44:16] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:44:16] Training epoch: 0
+[03.31.22|23:44:20] 	Iter 0 Done. | loss: 3.8877 | lr: 0.100000
+[03.31.22|23:44:54] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:44:54] Training epoch: 0
+[03.31.22|23:45:30] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:45:30] Training epoch: 0
+[03.31.22|23:45:35] 	Iter 0 Done. | loss: 3.9815 | lr: 0.100000
+[03.31.22|23:47:49] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:47:49] Training epoch: 0
+[03.31.22|23:47:55] 	Iter 0 Done. | loss: 4.3998 | lr: 0.100000
+[03.31.22|23:48:49] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:48:49] Training epoch: 0
+[03.31.22|23:49:29] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:49:29] Training epoch: 0
+[03.31.22|23:50:17] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:50:17] Training epoch: 0
+[03.31.22|23:50:44] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:50:44] Training epoch: 0
+[03.31.22|23:50:49] 	Iter 0 Done. | loss: 4.1793 | lr: 0.100000
+[03.31.22|23:51:11] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:51:11] Training epoch: 0
+[03.31.22|23:51:16] 	Iter 0 Done. | loss: 4.1531 | lr: 0.100000
+[03.31.22|23:51:47] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:51:47] Training epoch: 0
+[03.31.22|23:51:52] 	Iter 0 Done. | loss: 3.8309 | lr: 0.100000
+[03.31.22|23:52:05] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:52:05] Training epoch: 0
+[03.31.22|23:52:10] 	Iter 0 Done. | loss: 3.9954 | lr: 0.100000
+[03.31.22|23:52:31] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:52:31] Training epoch: 0
+[03.31.22|23:52:36] 	Iter 0 Done. | loss: 3.6836 | lr: 0.100000
+[03.31.22|23:53:08] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[03.31.22|23:53:08] Training epoch: 0
+[03.31.22|23:53:13] 	Iter 0 Done. | loss: 3.8828 | lr: 0.100000
+[04.01.22|11:31:38] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.01.22|11:31:38] Training epoch: 0
+[04.01.22|11:31:44] 	Iter 0 Done. | loss: 3.8024 | lr: 0.100000
+[04.04.22|21:18:06] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.04.22|21:18:07] Training epoch: 0
+[04.04.22|21:18:13] 	Iter 0 Done. | loss: 4.3085 | lr: 0.100000
+[04.04.22|21:18:44] 	mean_loss: 4.846265637874604
+[04.04.22|21:18:44] Time consumption:
+[04.04.22|21:18:44] Done.
+[04.04.22|21:18:44] Eval epoch: 0
+[04.04.22|21:18:51] 	mean_loss: 4.115348144011064
+[04.04.22|21:18:51] 	Top1: 2.48%
+[04.04.22|21:18:51] 	Top5: 10.74%
+[04.04.22|21:18:51] Done.
+[04.04.22|21:18:51] Training epoch: 1
+[04.04.22|21:19:04] 	Iter 100 Done. | loss: 4.4780 | lr: 0.100000
+[04.04.22|21:19:27] 	mean_loss: 4.260975900292396
+[04.04.22|21:19:27] Time consumption:
+[04.04.22|21:19:27] Done.
+[04.04.22|21:19:27] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[04.04.22|21:19:27] Eval epoch: 1
+[04.04.22|21:19:36] 	mean_loss: 4.123652140956279
+[04.04.22|21:19:36] 	Top1: 2.48%
+[04.04.22|21:19:36] 	Top5: 12.40%
+[04.04.22|21:19:36] Done.
+[04.04.22|21:24:51] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.04.22|21:24:51] Training epoch: 0
+[04.04.22|21:24:58] 	Iter 0 Done. | loss: 4.0004 | lr: 0.100000
+[04.04.22|21:25:29] 	mean_loss: 5.0556909292936325
+[04.04.22|21:25:29] Time consumption:
+[04.04.22|21:25:29] Done.
+[04.04.22|21:25:29] Eval epoch: 0
+[04.04.22|21:25:36] 	mean_loss: 4.128419391379869
+[04.04.22|21:25:36] 	Top1: 1.65%
+[04.04.22|21:25:36] 	Top5: 7.44%
+[04.04.22|21:25:36] Done.
+[04.04.22|21:25:36] Training epoch: 1
+[04.04.22|21:25:49] 	Iter 100 Done. | loss: 4.2781 | lr: 0.100000
+[04.04.22|21:26:11] 	mean_loss: 4.283791792392731
+[04.04.22|21:26:11] Time consumption:
+[04.04.22|21:26:11] Done.
+[04.04.22|21:26:11] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[04.04.22|21:26:11] Eval epoch: 1
+[04.04.22|21:26:19] 	mean_loss: 4.129417990850023
+[04.04.22|21:26:19] 	Top1: 1.65%
+[04.04.22|21:26:19] 	Top5: 8.26%
+[04.04.22|21:26:19] Done.
+[04.05.22|01:09:28] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.05.22|01:09:28] Training epoch: 0
+[04.05.22|01:09:34] 	Iter 0 Done. | loss: 4.2981 | lr: 0.100000
+[04.05.22|01:10:05] 	mean_loss: 5.845942184329033
+[04.05.22|01:10:05] Time consumption:
+[04.05.22|01:10:05] Done.
+[04.05.22|01:10:05] Eval epoch: 0
+[04.05.22|01:10:12] 	mean_loss: 4.102529096209313
+[04.05.22|01:10:12] 	Top1: 3.31%
+[04.05.22|01:10:12] 	Top5: 10.74%
+[04.05.22|01:10:12] Done.
+[04.05.22|01:10:12] Training epoch: 1
+[04.05.22|01:10:24] 	Iter 100 Done. | loss: 5.2599 | lr: 0.100000
+[04.05.22|01:10:47] 	mean_loss: 4.890208458900451
+[04.05.22|01:10:47] Time consumption:
+[04.05.22|01:10:47] Done.
+[04.05.22|01:10:47] The model has been saved as ./work_dir/recognition/ntu-xsub/ST_GCN/epoch2_model.pt.
+[04.05.22|01:10:47] Eval epoch: 1
+[04.05.22|01:10:55] 	mean_loss: 4.10465993171881
+[04.05.22|01:10:55] 	Top1: 2.48%
+[04.05.22|01:10:55] 	Top5: 11.57%
+[04.05.22|01:10:55] Done.
+[04.05.22|01:13:17] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.05.22|01:13:17] Training epoch: 0
+[04.05.22|01:13:22] 	Iter 0 Done. | loss: 4.8933 | lr: 0.100000
+[04.05.22|01:13:52] 	mean_loss: 6.0211040616035465
+[04.05.22|01:13:52] Time consumption:
+[04.05.22|01:13:52] Done.
+[04.05.22|01:13:52] Eval epoch: 0
+[04.05.22|01:14:00] 	mean_loss: 4.145178924907338
+[04.05.22|01:14:00] 	Top1: 2.48%
+[04.05.22|01:14:00] 	Top5: 9.09%
+[04.05.22|01:14:00] Done.
+[04.05.22|01:14:00] Training epoch: 1
+[04.05.22|01:14:11] 	Iter 100 Done. | loss: 5.0388 | lr: 0.100000
+[04.05.22|15:51:04] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 2, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.05.22|15:51:04] Training epoch: 0
+[04.06.22|14:27:37] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 64, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.06.22|14:27:37] Training epoch: 0
+[04.06.22|14:28:31] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.06.22|14:28:31] Training epoch: 0
+[04.15.22|02:25:29] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.15.22|02:25:29] Training epoch: 0
+[04.15.22|02:28:02] Parameters:
+{'work_dir': './work_dir/recognition/ntu-xsub/ST_GCN', 'config': 'config/st_gcn/ntu-xsub/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 2, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D/occlude/xsub/val_data.npy', 'label_path': './data/NTU-RGB-D/occlude/xsub/val_label.pkl'}, 'complete_skeleton_args': {'data_path': './data/NTU-RGB-D/complete/xsub/train_data.npy', 'label_path': './data/NTU-RGB-D/complete/xsub/train_label.pkl'}, 'batch_size': 1, 'test_batch_size': 1, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 60, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[04.15.22|02:28:02] Training epoch: 0
