@@ -39,6 +39,7 @@ class Graph():
     def __str__(self):
         return self.A
 
+    # 根据数据集配置，得到边集
     def get_edge(self, layout):
         if layout == 'openpose':
             self.num_node = 18
@@ -48,6 +49,7 @@ class Graph():
                              (10, 9), (9, 8), (11, 5), (8, 2), (5, 1), (2, 1),
                              (0, 1), (15, 0), (14, 0), (17, 15), (16, 14)]
             self.edge = self_link + neighbor_link
+            #  重心设置
             self.center = 1
         elif layout == 'ntu-rgb+d':
             self.num_node = 25
@@ -59,6 +61,7 @@ class Graph():
                               (22, 23), (23, 8), (24, 25), (25, 12)]
             neighbor_link = [(i - 1, j - 1) for (i, j) in neighbor_1base]
             self.edge = self_link + neighbor_link
+            #  重心设置
             self.center = 21 - 1
         elif layout == 'ntu_edge':
             self.num_node = 24
@@ -76,29 +79,37 @@ class Graph():
         else:
             raise ValueError("Do Not Exist This Layout.")
 
+    #  根据划分策略得到邻接矩阵A
     def get_adjacency(self, strategy):
         valid_hop = range(0, self.max_hop + 1, self.dilation)
         adjacency = np.zeros((self.num_node, self.num_node))
         for hop in valid_hop:
             adjacency[self.hop_dis == hop] = 1
+        #  获取带自环的邻接矩阵
         normalize_adjacency = normalize_digraph(adjacency)
 
         if strategy == 'uniform':
+            #  初始化成全零矩阵
             A = np.zeros((1, self.num_node, self.num_node))
             A[0] = normalize_adjacency
             self.A = A
+
         elif strategy == 'distance':
+            #  初始化成全零矩阵
             A = np.zeros((len(valid_hop), self.num_node, self.num_node))
             for i, hop in enumerate(valid_hop):
                 A[i][self.hop_dis == hop] = normalize_adjacency[self.hop_dis ==
                                                                 hop]
             self.A = A
+
         elif strategy == 'spatial':
             A = []
             for hop in valid_hop:
+                #  初始化成全零矩阵
                 a_root = np.zeros((self.num_node, self.num_node))
                 a_close = np.zeros((self.num_node, self.num_node))
                 a_further = np.zeros((self.num_node, self.num_node))
+                #  下列操作根据空间配置划分策略，从邻接矩阵中选择一些值，分别放到三个新的邻接矩阵中
                 for i in range(self.num_node):
                     for j in range(self.num_node):
                         if self.hop_dis[j, i] == hop:
@@ -117,11 +128,13 @@ class Graph():
                     A.append(a_root + a_close)
                     A.append(a_further)
             A = np.stack(A)
+            #  A的shape (3,18,18)
             self.A = A
         else:
             raise ValueError("Do Not Exist This Strategy")
 
 
+#  得到节点距离
 def get_hop_distance(num_node, edge, max_hop=1):
     A = np.zeros((num_node, num_node))
     for i, j in edge:
@@ -148,6 +161,7 @@ def normalize_digraph(A):
     return AD
 
 
+#  得到归一化的邻接矩阵（即公式中的DAD运算）
 def normalize_undigraph(A):
     Dl = np.sum(A, 0)
     num_node = A.shape[0]

@@ -23,7 +23,7 @@ class ConvTemporalGraphical(nn.Module):
     Shape:
         - Input[0]: Input graph sequence in :math:`(N, in_channels, T_{in}, V)` format
         - Input[1]: Input graph adjacency matrix in :math:`(K, V, V)` format
-        - Output[0]: Outpu graph sequence in :math:`(N, out_channels, T_{out}, V)` format
+        - Output[0]: Output graph sequence in :math:`(N, out_channels, T_{out}, V)` format
         - Output[1]: Graph adjacency matrix for output data in :math:`(K, V, V)` format
 
         where
@@ -44,10 +44,14 @@ class ConvTemporalGraphical(nn.Module):
                  bias=True):
         super().__init__()
 
+        # 3
         self.kernel_size = kernel_size
         self.conv = nn.Conv2d(
+            # 3
             in_channels,
+            # 64 * 3 (k * c, kc)
             out_channels * kernel_size,
+            # (1, 1)
             kernel_size=(t_kernel_size, 1),
             padding=(t_padding, 0),
             stride=(t_stride, 1),
@@ -55,12 +59,20 @@ class ConvTemporalGraphical(nn.Module):
             bias=bias)
 
     def forward(self, x, A):
+        # 断言：保证A的第一个维度（邻接矩阵个数）与卷积核大小是一致的
         assert A.size(0) == self.kernel_size
 
         x = self.conv(x)
 
+        # 经过 1 * 1 卷积后，改变的只有通道数量（c -> k * c），相当于升维
         n, kc, t, v = x.size()
+        # 形状变为 n(N*M), k, c, t, v
+        # 到这一步。形状变成 (512, 3, 64, 150, 18)，A的形状是(3, 18, 18)
         x = x.view(n, self.kernel_size, kc//self.kernel_size, t, v)
+
+        # 这一步运算不涉及时间维度运算，可以理解为对节点信息按照邻接矩阵进行聚合
+        # 每个节点信息具有64个维度，可以认为是一个 18（节点数量） * 64 的节点特征矩阵分别与3个邻接矩阵相乘
+        # 运算后得到的张量是 n, c, t, v （w为节点数量v，用w只是为了避免重复）
         x = torch.einsum('nkctv,kvw->nctw', (x, A))
 
         return x.contiguous(), A
