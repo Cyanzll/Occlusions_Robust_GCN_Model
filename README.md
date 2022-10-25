@@ -1,5 +1,6 @@
 # Occlusions_Robust_GCN_Model
 Trying to solve problems caused by occlusions in HAR ( Based on ST-GCN )
+![Pipeline](./images/pipeline.jpg)
 
 # ST-GCN (MMSkeleton):
 ## Reminder
