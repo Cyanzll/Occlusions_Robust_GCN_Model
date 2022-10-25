@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Reminder
 
 ST-GCN has transferred to [MMSkeleton](https://github.com/open-mmlab/mmskeleton),
@@ -12,3 +13,7 @@ This code base will soon be not maintained and exists as a historical artifact t
 
 For more recent works please checkout MMSkeleton.
   
+=======
+# Occlusions_Robust_GCN_Model
+Trying to solve problems caused by occlusions in HAR ( Based on ST-GCN )
+>>>>>>> 3a01fe9faaf4d7c7d2b4dc9d4be8532ba08efd8a
